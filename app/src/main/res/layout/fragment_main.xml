@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.tonymerritt.herome.Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar"
+            app:srcCompat="@drawable/heroes"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp" />
+
+
+
+        <Button
+            android:id="@+id/accidentButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@drawable/lightning_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Came by accident"
+            android:textAlignment="center"
+            android:textColor="#FFD201"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/genericButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@drawable/atomic_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Genetic mutation"
+            android:textAlignment="center"
+            android:textColor="#FFD201"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accidentButton" />
+
+        <Button
+            android:id="@+id/bornButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@drawable/rocket_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Born with them"
+            android:textAlignment="center"
+            android:textColor="#FFD201"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genericButton" />
+
+        <Button
+            android:id="@+id/chooseButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hero_solid_button"
+            android:backgroundTint="#FFD201"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Choose powers"
+            android:textAlignment="center"
+            android:textColor="#10161D"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bornButton" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
